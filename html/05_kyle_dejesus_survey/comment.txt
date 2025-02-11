@@ -1,0 +1,3 @@
+Time Taken: 45 minutes  
+Challenges: I struggled with form spacing, but I used <div> and <p> tags to fix it.  
+Lesson Learned: I now understand how input types work and how to group elements properly.  
