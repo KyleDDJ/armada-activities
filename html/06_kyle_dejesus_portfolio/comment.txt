@@ -1,0 +1,4 @@
+Time Taken: It took me approximately 1 hour to complete this project.
+Challenges & Resolutions:
+One challenge I faced was ensuring proper accessibility by linking <label> elements with their respective <input> fields. 
+I resolved this by adding id attributes and testing the form using keyboard navigation
