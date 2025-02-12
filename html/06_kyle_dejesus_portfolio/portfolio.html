@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <title>Welcome to My Portfolio</title>
+   </head>
+   <body>
+      <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>I love getting lost in stories, whether it's through novels, manga, or self-improvement books like Atomic Habits. When I'm not reading, I enjoy exercising from time to time and diving into video games for fun. Always up for a good book recommendation or a great game to play! Let me know if you want any tweaks!</p>
+            <img src="kyle.jpg" alt="Portrait of Kyle De Jesus" style="width: 250px; height: auto;">
+         </section>
+         <section id="projects">
+            <h2>Projects</h2>
+            <table style="width: 80%; margin-left: 0; border-collapse: collapse;">
+               <thead>
+                  <tr>
+                     <th style="padding: 8px 15px; text-align: left; width: 30%;">Project Name</th>
+                     <th style="padding: 8px 15px; text-align: left; width: 55%;">Description</th>
+                     <th style="padding: 8px 15px; text-align: left; width: 15%;">Year</th>
+                  </tr>
+               </thead>
+               <tbody>
+                  <tr>
+                     <td style="padding: 8px 15px;">Library Management System</td>
+                     <td style="padding: 8px 15px;">A web interface using HTML, CSS, Bootstrap, and JavaScript to manage books/authors.</td>
+                     <td style="padding: 8px 15px;">2024</td>
+                  </tr>
+                  <tr>
+                     <td style="padding: 8px 15px;">Tic-Tac-Toe Game</td>
+                     <td style="padding: 8px 15px;">This is a simple and interactive Tic Tac Toe game built using HTML, CSS, and JavaScript.</td>
+                     <td style="padding: 8px 15px;">2023</td>
+                  </tr>
+               </tbody>
+            </table>
+         </section>
+         <section id="contact">
+            <h2>Contact Me</h2>
+            <form>
+               <div style="display: flex; gap: 20px;">
+                  <div>
+                     <label for="name">Full Name:</label><br>
+                     <input type="text" name="name" required>
+                  </div>
+                  <div>
+                     <label for="email">Email Address:</label><br>
+                     <input type="email" name="email" required>
+                  </div>
+               </div>
+               <br>
+               <p>How did you hear about this portfolio?</p>
+               <input type="radio" name="referral" value="friend">
+               <label>Friend</label>
+               <input type="radio" name="referral" value="social">
+               <label>Social Media</label>
+               <input type="radio" name="referral" value="search">
+               <label>Search Engine</label>
+               <input type="radio" name="referral" value="other">
+               <label>Other</label><br><br>
+
+               <p>Skills/Interests:</p>
+               <input type="checkbox" name="skills" value="Web Development">
+               <label>Web Development</label>
+               <input type="checkbox" name="skills" value="Design">
+               <label>Design</label>
+               <input type="checkbox" name="skills" value="Photography">
+               <label>Photography</label>
+
+               <label for="comments">Messages:</label>
+               <textarea name="comments" rows="2" cols="40"></textarea>
+               
+               <input type="submit" value="Submit">
+               <br><br>
+            </form>
+         </section>
+      </main>
+      <footer>
+        <p>&copy; Kyle De Jesus 2025</p>
+      </footer>
+   </body>
+</html>
