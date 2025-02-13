@@ -1,0 +1,7 @@
+For this challenge, I mainly worked with the given code and made adjustments to complete the layout using Flexbox. 
+My approach was to ensure proper alignment and spacing between elements while keeping the structure simple and functional. 
+One minor challenge was fine-tuning the widths and spacing to maintain a balanced layout. To solve this, 
+I adjusted the justify-content property and ensured consistent sizing. 
+Overall, the task was straightforward, and it took me approximately X hours to complete.
+
+Time Taken: 1.5 hours
