@@ -76,7 +76,7 @@ section {
 }
 
 #about img {
-    max-width: 300px;
+    max-width: 350px;
     height: auto;
     border-radius: 10px;
     flex-shrink: 0; /* Prevents the image from shrinking */
