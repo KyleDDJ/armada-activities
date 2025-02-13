@@ -2,6 +2,6 @@ For this challenge, I mainly worked with the given code and made adjustments to 
 My approach was to ensure proper alignment and spacing between elements while keeping the structure simple and functional. 
 One minor challenge was fine-tuning the widths and spacing to maintain a balanced layout. To solve this, 
 I adjusted the justify-content property and ensured consistent sizing. 
-Overall, the task was straightforward, and it took me approximately X hours to complete.
+Overall, the task was straightforward, and it took me exaclty 1.5 hours to complete.
 
-Time Taken: 1.5 hours
+Time Taken: 1.5 hours   
