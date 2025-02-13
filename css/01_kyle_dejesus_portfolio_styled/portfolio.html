@@ -1,89 +1,95 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <title>Welcome to My Portfolio</title>
-      <link rel="stylesheet" href="styles.css">
-   </head>
-   <body>
-      <header>
-         <h1><span class="white-text">Welcome to</span> <span class="blue-text">My Portfolio</span></h1> 
-         <nav>
-            <a href="#about">About Me</a>
-            <a href="#projects">Projects</a>
-            <a href="#contact">Contact</a>
-         </nav>
-      </header>
-      <main>
-         <section id="about">
-            <img src="kyle.jpg" alt="Portrait of Kyle De Jesus">
-            <div class="about-text">
-                <h2>About Me</h2>
-                <p>I love getting lost in stories, whether it's through novels, manga, or self-improvement books like Atomic Habits. 
-                When I'm not reading, I enjoy exercising from time to time and diving into video games for fun. 
-                Always up for a good book recommendation or a great game to play!</p>
-            </div>
-        </section>
-         <section id="projects">
-            <h2>Projects</h2>
-            <table>
-               <thead>
-                  <tr>
-                     <th>Project Name</th>
-                     <th>Description</th>
-                     <th>Year</th>
-                  </tr>
-               </thead>
-               <tbody>
-                  <tr>
-                     <td>Library Management System</td>
-                     <td>A web interface using HTML, CSS, Bootstrap, and JavaScript to manage books/authors.</td>
-                     <td>2024</td>
-                  </tr>
-                  <tr>
-                     <td>Weathering app</td>
-                     <td>A web application built with HTML, CSS, and JavaScript that integrates the OpenWeatherMap API.</td>
-                     <td>2024</td>
-                  </tr>
-                  <tr>
-                     <td>Tic-Tac-Toe Game</td>
-                     <td>This is a simple and interactive Tic Tac Toe game built using HTML, CSS, and JavaScript.</td>
-                     <td>2023</td>
-                  </tr>
-               </tbody>
-            </table>
-         </section>
-         <section id="contact">
-            <h2>Contact Me</h2>
-            <form>
-               <div>
-                  <div>
-                     <label for="name">Full Name:</label>
-                     <input type="text" name="name" required>
-                  </div>
-                  <div>
-                     <label for="email">Email Address:</label>
-                     <input type="email" name="email" required>
-                  </div>
-               </div>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport">
+        <title>Kyle's Portfolio</title>
+        <link rel="stylesheet" href="styles.css">
+        <link href="https:/unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+            <a href="#" class="logo"><span>Welcome to</span><span> My Portfolio</span></a>
 
-               <p>How did you hear about this portfolio?</p>
-               <input type="radio" name="referral" value="friend"> <label>Friend</label>
-               <input type="radio" name="referral" value="social"> <label>Social Media</label>
-               <input type="radio" name="referral" value="search"> <label>Search Engine</label>
-               <input type="radio" name="referral" value="other"> <label>Other</label>
+            <nav class="navbar">
+                <a href="#about">About Me</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
-               <p>Skills/Interests:</p>
-               <input type="checkbox" name="skills" value="Web Development"> <label>Web Development</label>
-               <input type="checkbox" name="skills" value="Design"> <label>Design</label>
-               <input type="checkbox" name="skills" value="Photography"> <label>Photography</label>
-               <label for="comments">Messages:</label>
-               <textarea name="comments" rows="2" cols="40"></textarea>
-               <input type="submit" value="Submit">
-            </form>
-         </section>
-      </main>
-      <footer>
-         <p>&copy; Kyle De Jesus 2025</p>
-      </footer>
-   </body>
+        </header>
+        <main>
+            <section id="about">
+                <img src="kyle.jpg" alt="Portrait of Kyle De Jesus">
+                <div class="about-text">
+                    <h2>About Me</h2>
+                    <p>I love getting lost in stories, whether it's through novels, manga, or self-improvement books like Atomic Habits. 
+                    When I'm not reading, I enjoy exercising from time to time and diving into video games for fun. 
+                    Always up for a good book recommendation or a great game to play!</p>
+                </div>
+            </section>
+            <section id="projects">
+                <h2>Projects</h2>
+                <table>
+                   <thead>
+                      <tr>
+                         <th>Project Name</th>
+                         <th>Description</th>
+                         <th>Year</th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                         <td>Library Management System</td>
+                         <td>A web interface using HTML, CSS, Bootstrap, and JavaScript to manage books/authors.</td>
+                         <td>2024</td>
+                      </tr>
+                      <tr>
+                         <td>Tic-Tac-Toe Game</td>
+                         <td>This is a simple and interactive Tic Tac Toe game built using HTML, CSS, and JavaScript.</td>
+                         <td>2023</td>
+                      </tr>
+                      <tr>
+                         <td>Weathering app</td>
+                         <td>A web application built with HTML, CSS, and JavaScript that integrates the OpenWeatherMap API.</td>
+                         <td>2025</td>
+                      </tr>
+                   </tbody>
+                </table>
+             </section>
+             <section id="contact">
+                <h2>Contact Me</h2>
+                <form>
+                   <div>
+                      <div>
+                         <label for="name">Full Name:</label>
+                         <input type="text" name="name" required>
+                      </div>
+                      <div>
+                         <label for="email">Email Address:</label>
+                         <input type="email" name="email" required>
+                      </div>
+                   </div>
+    
+                   <p>How did you hear about this portfolio?</p>
+                   <input type="radio" name="referral" value="friend"> <label>Friend</label>
+                   <input type="radio" name="referral" value="social"> <label>Social Media</label>
+                   <input type="radio" name="referral" value="search"> <label>Search Engine</label>
+                   <input type="radio" name="referral" value="other"> <label>Other</label>
+    
+                   <p>Skills/Interests:</p>
+                   <input type="checkbox" name="skills" value="Web Development"> <label>Web Development</label>
+                   <input type="checkbox" name="skills" value="Design"> <label>Design</label>
+                   <input type="checkbox" name="skills" value="Photography"> <label>Photography</label>
+                   <label for="comments">Messages:</label>
+                   <textarea name="comments" rows="2" cols="40"></textarea>
+                   <input type="submit" value="Submit">
+                </form>
+             </section>
+          </main>
+          <footer>
+             <p>&copy; Kyle De Jesus 2025</p>
+          </footer>
+        </main>
+    </body>
 </html>
