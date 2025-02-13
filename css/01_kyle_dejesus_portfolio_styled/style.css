@@ -1,0 +1,166 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom,  #002853, #040d1d);
+    color: #ffffff;
+}
+
+/* Header */
+header {
+    background: rgba(27, 38, 59, 0.9);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 20px auto;
+    width: 80%;
+}
+
+h1 {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.white-text {
+    color: white;
+}
+
+.blue-text {
+    color: #7ba2bb; /* A nice shade of blue */
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #7ba2bb; /* A nice shade of blue */
+    margin: 0 15px;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+} 
+
+nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    text-decoration: none;
+}
+
+/* Main Sections */
+main {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+section {
+    background: #1b263b;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 20px;
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
+}
+
+/* About Section */
+#about {
+    display: flex;
+    align-items: center; /* Ensures vertical alignment */
+    justify-content: start; /* Aligns content to the left */
+    text-align: left;
+    padding: 20px;
+    gap: 20px; /* Adds space between image and text */
+}
+
+#about img {
+    max-width: 300px;
+    height: auto;
+    border-radius: 10px;
+    flex-shrink: 0; /* Prevents the image from shrinking */
+}
+
+.about-text {
+    flex-grow: 1;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background: #0d1b2a;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th, td {
+    border: 1px solid #ffffff;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #415a77;
+}
+
+/* Form */
+form {
+    text-align: left;
+}
+
+form div {
+    margin-bottom: 10px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    background: #415a77;
+    color: white;
+}
+
+input[type="radio"], input[type="checkbox"] {
+    width: auto;
+    margin-right: 5px;
+}
+
+label {
+    display: inline-block;
+    margin-bottom: 5px;
+}
+
+.radio-group, .checkbox-group {
+    text-align: left;
+}
+
+input[type="submit"] {
+    background-color: #21bf73;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #1a8c5e;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #1b263b;
+    color: white;
+    margin-top: 20px;
+    border-radius: 10px;
+}
