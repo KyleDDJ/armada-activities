@@ -61,7 +61,7 @@ body {
     font-size: 1.1em;
 }
 
-.todo-item:nth-child(2) {
+#completed-task {
     background: #a0d468;
     text-decoration: line-through;
     color: black;
