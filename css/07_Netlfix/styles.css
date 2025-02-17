@@ -123,6 +123,7 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    list-style: none;
     gap: 25px;
     padding: 10px;
     margin-bottom: 30px;
@@ -161,7 +162,6 @@ header {
     justify-content: center;
 }
 
-
 .reason-card {
     background: #14172a;
     padding: 20px;
@@ -171,18 +171,15 @@ header {
     text-align: left;
 }
 
-
 .reason-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-
 .reason-card p {
     font-size: 14px;
     line-height: 1.4;
 }
-
 
 .cta-footer {
     text-align: center;
@@ -191,12 +188,10 @@ header {
     color: white;
 }
 
-
 .cta-footer p {
     font-size: 16px;
     margin-bottom: 15px;
 }
-
 
 .email-form {
     display: flex;
@@ -206,7 +201,6 @@ header {
     max-width: 600px;
     margin: auto;
 }
-
 
 .email-form input {
     background-color: rgb(23, 22, 20);
@@ -218,11 +212,9 @@ header {
     border-radius: 4px;
 }
 
-
 .email-form input::placeholder {
     color: #bbb;
 }
-
 
 .footer-get-started {
     background: rgb(229,9,20);
