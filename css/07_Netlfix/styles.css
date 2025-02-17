@@ -141,7 +141,6 @@ header {
     cursor: pointer;
 }
 
-/* Section Styling */
 .reasons-to-join {
     max-width: 1200px;
     margin: 50px auto;
@@ -150,13 +149,11 @@ header {
 
 }
 
-/* Heading */
 .reasons-to-join h2 {
     font-size: 24px;
     margin-bottom: 20px;
 }
 
-/* Container for Cards */
 .reasons-container {
     display: flex;
     gap: 20px;
@@ -164,9 +161,9 @@ header {
     justify-content: center;
 }
 
-/* Individual Card */
+
 .reason-card {
-    background: #14172a; /* Dark navy blue */
+    background: #14172a;
     padding: 20px;
     border-radius: 10px;
     width: 250px;
@@ -174,19 +171,19 @@ header {
     text-align: left;
 }
 
-/* Card Headings */
+
 .reason-card h3 {
     font-size: 18px;
     margin-bottom: 10px;
 }
 
-/* Card Text */
+
 .reason-card p {
     font-size: 14px;
     line-height: 1.4;
 }
 
-/* Footer Section */
+
 .cta-footer {
     text-align: center;
     background: black;
@@ -194,13 +191,13 @@ header {
     color: white;
 }
 
-/* Text Above the Input */
+
 .cta-footer p {
     font-size: 16px;
     margin-bottom: 15px;
 }
 
-/* Email Form Container */
+
 .email-form {
     display: flex;
     justify-content: center;
@@ -210,7 +207,7 @@ header {
     margin: auto;
 }
 
-/* Email Input */
+
 .email-form input {
     background-color: rgb(23, 22, 20);
     color: white;
@@ -221,12 +218,12 @@ header {
     border-radius: 4px;
 }
 
-/* Placeholder Color */
+
 .email-form input::placeholder {
     color: #bbb;
 }
 
-/* Get Started Button */
+
 .footer-get-started {
     background: rgb(229,9,20);
     color: white;
