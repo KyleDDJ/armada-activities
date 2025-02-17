@@ -1,0 +1,240 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    background: url('netflix_image_asset/PH-en-20250113-TRIFECTA-perspective_8171c01e-c334-403b-bfa2-133bcc962aaf_small.jpg') no-repeat center center/cover;
+    color: white;
+    background-color: black;
+    height: 600px;
+    font-family: Arial, sans-serif;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 150px;
+    background: rgba(0, 0, 0, 0.7);
+}
+
+
+.logo img {
+    width: 150px;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.nav-links a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 16px;
+    font-size: 14px;
+    border-radius: 4px;
+}
+
+.nav-links a:last-child {
+    background: #e50914;
+    border-radius: 4px;
+}
+
+
+
+.banner {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.6);
+    margin: 0;
+    gap: 0;
+}
+
+
+.banner-content {
+    max-width: 650px;
+}
+
+
+.banner h1 {
+    font-size: 60px;
+    font-weight: bold;
+}
+
+.pricing-text {
+    font-weight: bold;
+}
+
+.banner p    {
+    font-size: 15px;    
+    margin-bottom: 5px;
+}
+
+
+.banner .input-container {
+    display: block;
+    align-items: center;   
+    margin-top: 15px;
+    gap: 5px;
+}
+
+.text {
+    background-color: rgb(23,22,20);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    width: 350px;
+    border: none;
+    border-radius: 4px;
+}
+
+.get-started {
+    background: rgb(229,9,20);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-weight: bold;
+}
+
+.trending{
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: left;
+    color: white;
+}
+
+
+.trending-shows{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 25px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.show img{
+    border-radius: 10px;
+}
+
+.next {
+    border-radius: 40px;
+    background-color: rgb(26,26,26);
+    color: rgb(187,187,187);
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Section Styling */
+.reasons-to-join {
+    max-width: 1200px;
+    margin: 50px auto;
+    text-align: left;
+    color: white;
+
+}
+
+/* Heading */
+.reasons-to-join h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Container for Cards */
+.reasons-container {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+/* Individual Card */
+.reason-card {
+    background: #14172a; /* Dark navy blue */
+    padding: 20px;
+    border-radius: 10px;
+    width: 250px;
+    min-height: 300px;
+    text-align: left;
+}
+
+/* Card Headings */
+.reason-card h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+/* Card Text */
+.reason-card p {
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+/* Footer Section */
+.cta-footer {
+    text-align: center;
+    background: black;
+    padding: 40px 20px;
+    color: white;
+}
+
+/* Text Above the Input */
+.cta-footer p {
+    font-size: 16px;
+    margin-bottom: 15px;
+}
+
+/* Email Form Container */
+.email-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    max-width: 600px;
+    margin: auto;
+}
+
+/* Email Input */
+.email-form input {
+    background-color: rgb(23, 22, 20);
+    color: white;
+    padding: 15px;
+    font-size: 16px;
+    width: 480px;
+    border: none;
+    border-radius: 4px;
+}
+
+/* Placeholder Color */
+.email-form input::placeholder {
+    color: #bbb;
+}
+
+/* Get Started Button */
+.footer-get-started {
+    background: rgb(229,9,20);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: 0.3s;
+    font-weight: bold;
+}
