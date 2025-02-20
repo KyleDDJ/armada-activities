@@ -1,0 +1,47 @@
+.nav-container {
+    max-width: 1200px; /* Restrict the nav bar width */
+    width: 100%;
+    margin: 0 auto; /* Centering */
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: nowrap; /* Prevents wrapping */
+}
+
+.search-container {
+    min-width: 200px;
+    max-width: 250px;
+    flex-shrink: 0; /* Prevents resizing */
+}
+
+.auth {
+    min-width: 250px;
+    flex-shrink: 0; /* Keeps buttons from shrinking */
+}
+
+.sign-in, .sign-up {
+    width: auto; /* Prevents unnecessary shrinking */
+}
+
+/* Ensure the body content does not stretch */
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main {
+    max-width: 1200px;
+    width: 100%;
+    padding: 20px;
+}
+
+/* Prevent footer stretching */
+footer {
+    max-width: 1200px;
+    width: 100%;
+    text-align: center;
+}
