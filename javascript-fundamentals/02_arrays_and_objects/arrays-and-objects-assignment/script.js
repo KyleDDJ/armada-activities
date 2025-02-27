@@ -8,8 +8,13 @@ let book = {
 
 // Access and print properties using: Dot notation, Bracket notation
 console.log(book.title);
-console.log(book["author"]);
+console.log(book.author);
 console.log(book.pages);
+console.log(book.isRead);
+
+console.log(book["tittle"]);
+console.log(book["author"]);
+console.log(book["pages"]);
 console.log(book["isRead"]);
 
 // Update properties
