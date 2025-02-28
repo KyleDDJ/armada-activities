@@ -64,22 +64,3 @@ elderberry: 7
 ```
 The sides 7, 10, and 5 form a valid triangle.
 ```
-
----
-
-## Task 5: Reverse Array Elements
-
-| Variable | Values             |
-|----------|------------------|
-| numbers  | `[1, 3, 5, 7, 9]` |
-| i        | `4 → 3 → 2 → 1 → 0` |
-
-**Output:**
-```
-Reversed Element: 9
-Reversed Element: 7
-Reversed Element: 5
-Reversed Element: 3
-Reversed Element: 1
-```
-
