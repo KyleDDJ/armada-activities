@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Profile Card Editor</title>
+      <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+      <div class="profile-card">
+         <img id="profileImage" alt="Profile Image">
+         <h2 id="profileName">Kyle D</h2>
+         <p id="profileBio">Armada Intern</p>
+      </div>
+      <div class="inputs">
+         <label class="input-tittle1">Update Name:</label>
+         <input type="text" id="nameInput" placeholder="New Name">
+         <button class="button" onclick="updateName()">Update Name</button>
+         <p></p>
+         <label class="input-tittle2">Update Bio:</label>
+         <input type="text" id="bioInput" placeholder="New Bio">
+         <button class="button" onclick="updateBio()">Update Bio</button>
+         <p></p>
+         <label class="input-tittle3">Update Image URL:</label>
+         <input type="text" id="imageInput" placeholder="Image URL">
+         <button class="button" onclick="updateImage()">Update Image</button>
+         <p></p>
+         <label class="input-tittle4">Change Background Color:</label>
+         <input type="color" id="colorInput">
+         <button class="button-color" onclick="updateBackground()">Update Background Color</button>
+      </div>
+      <script src="script.js"></script>
+   </body>
+</html>

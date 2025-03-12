@@ -1,0 +1,177 @@
+/* General Styles */
+* {
+    outline: 1px solid red;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #000;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                      url('https://static.bandainamcoent.eu/high/tekken/tekken-8/00-page-setup/TEKKEN8_Header_mobile_2.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Main Content */
+.selection-screen {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #f8d203;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.selection-container {
+    display: flex;
+    gap: 40px;
+    width: 100%;
+}
+
+.character-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    border: 2px solid #f8d203;
+    padding: 40px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 0 20px rgba(248, 210, 3, 0.3);
+    margin-right: 130px;
+}
+
+.character-item {
+    width: 140px;
+    height: 145px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    transition: all 0.2 ease;
+    border: 2px solid transparent;
+    position: relative;
+    background-color: rgba(40, 40, 40, 0.7);
+}
+
+.character-image {
+    width: 110px;
+    height: 115px;
+    background-size: cover;
+    background-position: center;
+}
+
+.character-name-small {
+    font-size: 0.7rem;
+    margin-top: 5px;
+    text-align: center;
+    color: #ccc;
+}
+
+.character-item.selected {
+    border-color: #f8d203;
+    box-shadow: 0 0 15px rgba(248, 210, 3, 0.7);
+    transform: scale(1.05);
+    background-color: rgba(80, 80, 80, 0.7);
+}
+
+.character-item.selected .character-name-small {
+    color: #f8d203;
+}
+
+/* Selected Character Display */
+/* .selected-character-display { orig
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #f8d203;
+    box-shadow: 0 0 20px rgba(248, 210, 3, 0.3);
+} */
+
+.selected-character-display {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 385px;
+    padding: 70px 21px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border: 2px solid #f8d203;
+    box-shadow: 0 0 20px rgba(248, 210, 3, 0.3);
+}
+
+.character-image-large {
+    width: 310px;
+    height: 350px;
+    margin-bottom: 20px;
+    background-size: cover;
+    background-position: center;
+}
+
+#selectedCharacterName {
+    margin-bottom: 10px;
+    font-size: 1.8rem;
+    text-align: center;
+    color: #f8d203;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.character-description {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    margin-bottom: 20px;
+    max-width: 280px;
+    line-height: 1.4;
+}
+
+/* Character Stats */
+.character-stats {
+    width: 100%;
+}
+
+.stat-bar {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.stat-label {
+    width: 50px;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+.stat-bar-container {
+    flex: 1;
+    height: 15px;
+    background-color: #333;
+    border: 1px solid #666;
+}
+
+.stat-bar-fill {
+    height: 100%;
+    background-color: #f8d203;
+    width: 0%;
+    transition: 0.5s ease;
+}

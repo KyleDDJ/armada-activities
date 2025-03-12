@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Bank Revisit</title>
+      <link rel="stylesheet" href="style.css">
+   </head>
+   <body>
+      <header class="header">Revisit Bank Account Manager</header>
+      <main class="bank-card">
+         <h2 class="bank-tittle">Bank Account</h2>
+         <h2 class="balance" id="current-Bal">Balance: $1000</h2>
+         <h2 class="withdraw-limit" id="withdrawal-limit">Daily Withdrawal Limit: $500</h3>
+         <input type="number" id="amountInput" placeholder="Enter amount">
+         <br><br>
+         <button id="btn-deposit" class="button-deposit">Deposit</button>
+         <button id="btn-withdraw" class="button-withdraw">Withdraw</button>
+
+         <p id="message" class="message"></p>
+            
+         <section class="transaction" id="transaction-list">
+            <h3>Transaction History</h3>
+            <ul id="transaction-list"></ul>
+         </section>
+      </main>
+      <script src="script.js"></script>
+   </body>
+</html>

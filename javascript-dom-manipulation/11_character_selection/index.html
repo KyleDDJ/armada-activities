@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tekken 8 - Character Selection</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main class="selection-screen">
+        <h1>SELECT YOUR FIGHTER</h1>
+        
+        <div class="selection-container">
+            <div class="character-grid">
+                
+            </div>
+            
+            <div class="selected-character-display">
+                <div class="character-image-large" id="selectedCharacterImage"></div>
+                <h2 id="selectedCharacterName">Select a Fighter</h2>
+                <p id="selectedCharacterDescription" class="character-description"></p>
+                <section class="character-stats">
+                    <div class="stat-bar">
+                        <span class="stat-label">Power</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar-fill" id="powerStat"></div>
+                        </div>
+                    </div>
+                    <div class="stat-bar">
+                        <span class="stat-label">Speed</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar-fill" id="speedStat"></div>
+                        </div>
+                    </div>
+                    <div class="stat-bar">
+                        <span class="stat-label">Reach</span>
+                        <div class="stat-bar-container">
+                            <div class="stat-bar-fill" id="reachStat"></div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

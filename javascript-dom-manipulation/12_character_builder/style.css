@@ -1,0 +1,72 @@
+/* *{
+    outline: 1px solid red;
+} */
+body {
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-image: url("https://i.pinimg.com/originals/e5/8d/c1/e58dc140e157a4282a02b65af048c6b8.gif");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.character-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+}
+
+.character-preview {
+    position: relative;
+    width: 128px;
+    height: 192px;
+    display: flex;
+    justify-content: center;
+}
+
+#boots-slot {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 68%;
+    z-index: 1;
+}
+
+#leggings-slot {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 45%;
+    z-index: 2;
+}
+
+#armor-slot {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 20%;
+    z-index: 3;
+}
+
+#helmet-slot {
+    position: absolute;
+    width: 50%;
+    height: auto;
+    top: 0%;
+    z-index: 4;
+}
+
+.selection-container img {
+    cursor: pointer;
+    width: 60px;
+    margin: 5px;
+    transition: 0.2s ease-in-out;
+}
+
+.selection-container img:hover {
+    transform: scale(1.1);
+}

@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  .profile-card {
+    padding: 15px 10px 10px 10px;
+    margin: auto;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    width: 30%;
+  }
+  
+  .profile-card img {
+    width: 180px;
+    height: 170px;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+
+  .profile-card p{
+    color: grey;
+    font-weight: bold;
+  }
+  
+  .inputs {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    width: 100%;
+  }
+  .input-tittle1 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 390px;
+  }
+  .input-tittle2{
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 410px;
+  }
+  .input-tittle3 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 340px;
+  }
+  .input-tittle4 {
+    font-weight: bold;
+    font-size: 20px;
+    margin-right: 240px;
+  }
+  
+  input{
+    margin: 10px;
+    padding: 10px;
+    display: block;
+    width: 30%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* .button {
+    padding: 5px;
+    display: block;
+    width: 30%;
+    background-color: wheat;
+    border-radius: 5px;
+    margin-left: auto;
+    margin-right: auto;
+  } */
+  .button-color {
+    padding: 5px;
+    display: block;
+    width: 28%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: wheat;
+    border-radius: 5px;
+  }

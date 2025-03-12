@@ -1,0 +1,7 @@
+.firefly {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    cursor: pointer;
+    transition: 0.4s ease-in-out, 0.5s ease-in-out;
+}
