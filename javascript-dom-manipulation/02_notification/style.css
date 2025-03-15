@@ -43,5 +43,6 @@ body {
     background: grey;
     padding: 10px;
     color: white;
-    font-weight: 500;
+    font-weight: bold;
+    margin-bottom: 10px;
 }
