@@ -10,17 +10,17 @@ class Subject {
     private String description;
     private double grade;
 
-    public Subject(String code, String description, double grade) { //Initialize
+    public Subject(String code, String description, double grade) {
         this.code = code;
         this.description = description;
         this.grade = grade;
     }
 
     public double getGrade() {
-        return grade; 
+        return grade;
     }
 
-    public String toString() { //Format of subject details
+    public String toString() {
         return code + " - " + description + " (Grade: " + grade + ")";
     }
 }
@@ -28,9 +28,9 @@ class Subject {
 class Student implements Archivable {
     private String name;
     private String id;
-    private List<Subject> subjects = new ArrayList<>(); //Initially empty
+    private List<Subject> subjects = new ArrayList<>();
 
-    public Student(String name, String id) { //Sets up name and id
+    public Student(String name, String id) {
         this.name = name;
         this.id = id;
     }
@@ -39,7 +39,7 @@ class Student implements Archivable {
         subjects.add(subject);
     }
 
-    public double calculateGPA() { //COmputes average of all grades
+    public double calculateGPA() {
         if (subjects.isEmpty()) return 0.0;
         double sum = 0;
         for (Subject s : subjects) {
@@ -68,7 +68,7 @@ class Student implements Archivable {
         this.id = id;
     }
 
-    public String toString() { //Readable printout of the student.
+    public String toString() {
         StringBuilder sb = new StringBuilder();
         sb.append("Name: ").append(name).append("\nID: ").append(id).append("\n");
         for (Subject s : subjects) {
@@ -79,24 +79,24 @@ class Student implements Archivable {
     }
 
     @Override
-    public boolean archive() {//Returns true if GPA is greater than or equal to 3.5
+    public boolean archive() {
         return calculateGPA() >= 3.5;
     }
 }
 
-class Transcript { //Helper class
+class Transcript {
     public static void display(Student student) {
         System.out.println("\n--- Transcript ---");
         System.out.println(student);
     }
 }
 
-public class Main{
+public class Main {
     static List<Student> students = new ArrayList<>();
     static final String FILE_NAME = "C:\\Users\\ACER\\Desktop\\armada-activities\\final-assigment\\Student-Record-Management-System\\StudentRec.txt";
 
     public static void main(String[] args) {
-        loadFromFile(); // Load previously saved students from file.
+        loadFromFile();
         Scanner scanner = new Scanner(System.in);
         int choice = -1;
 
@@ -106,10 +106,9 @@ public class Main{
             System.out.println("2. Add Subject to Student");
             System.out.println("3. View Transcript");
             System.out.println("4. Sort by Name");
-            System.out.println("5. Sort by GPA");
-            System.out.println("6. Archive Eligible Students");
-            System.out.println("7. Save & Exit");
-            System.out.println("8. Update Student Info");
+            System.out.println("5. Archive Eligible Students");
+            System.out.println("6. Save & Exit");
+            System.out.println("7. Update Student Info");
             System.out.print("Enter choice: ");
 
             try {
@@ -125,30 +124,33 @@ public class Main{
                             System.out.println(s.getName() + " (ID: " + s.getId() + ")");
                         }
                     }
-                    case 5 -> {
-                        students.sort((a, b) -> Double.compare(b.calculateGPA(), a.calculateGPA()));
-                        System.out.println("Sorted by GPA.");
-                        for (Student s : students) {
-                            System.out.println(s.getName() + " (GPA: " + String.format("%.2f", s.calculateGPA()) + ")");
-                        }
-                    }
-                    case 6 -> archiveStudents();
-                    case 7 -> saveToFile();
-                    case 8 -> updateStudentInfo(scanner);
+                    case 5 -> archiveStudents();
+                    case 6 -> saveToFile();
+                    case 7 -> updateStudentInfo(scanner);
                     default -> System.out.println("Invalid choice.");
                 }
             } catch (NumberFormatException e) {
                 System.out.println("Please enter a valid number.");
             }
 
-        } while (choice != 7);
+        } while (choice != 6);
     }
 
     static void addStudent(Scanner scanner) {
         System.out.print("Enter name: ");
-        String name = scanner.nextLine();
+        String name = scanner.nextLine().trim();
         System.out.print("Enter ID: ");
-        String id = scanner.nextLine();
+        String id = scanner.nextLine().trim();
+
+    
+        //Check if name already exists
+        for (Student s : students) {
+            if (s.getName().equalsIgnoreCase(name)) {
+                System.out.println("A student with this name already exists. Cannot add duplicate.");
+                return; //Exit without adding
+            }
+        }
+    
         students.add(new Student(name, id));
         System.out.println("Student added.");
     }
