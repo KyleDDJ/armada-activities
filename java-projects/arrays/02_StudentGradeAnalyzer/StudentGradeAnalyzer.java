@@ -14,8 +14,8 @@ public class StudentGradeAnalyzer {
 
         for (int i = 0; i < numStudents; i++) {
             System.out.print("Enter grade for student " + (i + 1) + ": ");
-            grades[i] = scanner.nextInt();
-            sum += grades[i];
+            grades[i] = scanner.nextInt();  
+            sum += grades[i];   
 
             if (grades[i] > highest) {
                 highest = grades[i];
